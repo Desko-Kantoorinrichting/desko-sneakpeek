@@ -26,7 +26,7 @@ form.addEventListener('submit', async (event) => {
   button.textContent = 'Even geduld…';
   const values = new FormData(form);
   try {
-    const response = await fetch('https://formsubmit.co/ajax/marketing@desko.nl', {
+    const response = await fetch('https://formsubmit.co/ajax/silver@desko.nl', {
       method: 'POST',
       headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
       body: JSON.stringify({
