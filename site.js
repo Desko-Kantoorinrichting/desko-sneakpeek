@@ -26,17 +26,12 @@ form.addEventListener('submit', async (event) => {
   button.textContent = 'Even geduld…';
   const values = new FormData(form);
   try {
-    const response = await fetch('https://formsubmit.co/ajax/silver@desko.nl', {
+    const response = await fetch('/', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-      body: JSON.stringify({
-        name: values.get('name'), email: values.get('email'),
-        toestemming: values.get('consent') === 'on' ? 'Ja, eenmalige update' : 'Nee',
-        _subject: 'Aanmelding Desko sneak peek', website: values.get('website')
-      })
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: new URLSearchParams(values).toString()
     });
-    const result = await response.json();
-    if (!response.ok || (result.success !== true && result.success !== 'true')) throw new Error('Aanmelden mislukt');
+    if (!response.ok) throw new Error('Aanmelden mislukt');
     form.reset();
     form.hidden = true;
     document.getElementById('signup-success').hidden = false;
