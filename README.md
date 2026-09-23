@@ -8,7 +8,7 @@ De bestanden in de hoofdmap kunnen rechtstreeks via GitHub Pages worden gepublic
 
 ## Aanmeldingen
 
-Het formulier verstuurt naam, e-mail en toestemming via FormSubmit naar silver@desko.nl.
+Het formulier verstuurt naam, e-mail en toestemming via FormSubmit naar marketing@desko.nl.
 De eerste aanmelding triggert een activatie-e-mail; iemand met toegang tot die mailbox moet die bevestigen. Controleer daarna met een tweede testaanmelding of deze in de inbox komt. Controleer ook de spamfolder.
 
 Bezoekers krijgen geen automatische e-mail. Desko gebruikt de ontvangen adressen voor één persoonlijke update.
