@@ -45,13 +45,13 @@
         <div class="copy"><p>De rest houden we nog héél even onder de pet.<br>Binnenkort hoor je meer.</p><p>Tot die tijd: niet verder gluren hè. 👀</p></div>
         <section class="signup" aria-labelledby="signup-title">
           <div><h2 id="signup-title">Als eerste op de hoogte?</h2><p>Laat je gegevens achter. We laten je persoonlijk weten zodra we meer kunnen laten zien.</p></div>
-          <form id="signup-form">
+          <form id="signup-form" name="desko-sneakpeek" method="POST" data-netlify="true" netlify-honeypot="website">\n            <input type="hidden" name="form-name" value="desko-sneakpeek">
             <div class="fields"><label>Naam <span>(optioneel)</span><input name="name" autocomplete="name" maxlength="100" placeholder="Jouw naam"></label><label>E-mailadres<input type="email" name="email" autocomplete="email" maxlength="254" required placeholder="jij@bedrijf.nl"></label></div>
             <label class="consent"><input type="checkbox" name="consent" required><span>Desko mag mij eenmalig mailen zodra er meer te zien is.</span></label>
             <div class="honeypot" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
             <button type="submit">Houd me op de hoogte ↗</button>
             <p class="error" id="signup-error" role="alert" hidden>Dat ging niet goed. Probeer het nog eens.</p>
-            <p class="privacy">We gebruiken je gegevens alleen voor deze update. Het formulier wordt verwerkt door FormSubmit en doorgestuurd naar Desko.</p>
+            <p class="privacy">We gebruiken je gegevens alleen voor deze update. Het formulier wordt verwerkt en opgeslagen via Netlify voor Desko.</p>
           </form>
           <p class="success" id="signup-success" role="status" hidden>Gelukt! Je hoort van ons zodra we meer kunnen laten zien.</p>
         </section>
