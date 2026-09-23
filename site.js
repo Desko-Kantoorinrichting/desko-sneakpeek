@@ -36,7 +36,8 @@ form.addEventListener('submit', async (event) => {
       })
     });
     const result = await response.json();
-    if (!response.ok || result.success === false) throw new Error('Aanmelden mislukt');
+    console.info('FormSubmit status:', JSON.stringify({success: result.success, message: result.message}));
+    if (!response.ok || (result.success !== true && result.success !== 'true')) throw new Error('Aanmelden mislukt');
     form.reset();
     form.hidden = true;
     document.getElementById('signup-success').hidden = false;
